@@ -2,8 +2,10 @@ import { GlowParticle } from "./glowParticle.js"
 
 const COLORS = [
   { r: 9, g: 87, b: 195 },
-  { r: 129, g: 52, b: 175 },
   { r: 239, g: 66, b: 111 },
+  { r: 25, g: 203, b: 87 },
+  { r: 144, g: 224, b: 255 },
+  { r: 255, g: 51, b: 61 },
 ]
 
 class App {
@@ -14,10 +16,10 @@ class App {
 
     this.pixelRatio = (window.devicePixelRatio > 1) ? 2 : 1
 
-    this.totalParticles = 7
+    this.totalParticles = 10
     this.particles = []
-    this.maxRadius = 1200
-    this.minRadius = 900
+    this.maxRadius = 1800
+    this.minRadius = 300
 
     window.addEventListener("resize", this.resize.bind(this), false)
     this.resize()
